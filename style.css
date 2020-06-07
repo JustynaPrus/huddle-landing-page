@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 1440px;
+  min-width: 375px;
+  min-height: 100vh;
+  font-family: Poppins;
+  font-size: 18px;
+  color: hsl(192, 100%, 9%);
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 815px){
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+h1{
+    font-size: 2.1em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+p{
+    font-size: 0.9em;
+}
+article{
+    max-width: 475px;
+    font-size: 0.9em;
+    color: hsl(208, 11%, 55%);
+}
+/*przyciski*/
+button{
+    background-color: white;
+    padding: 14px 60px 14px 60px;
+    border-radius: 25px;
+    font-family: Open Sans;
+    font-size: 0.8em;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px #D3D3D3;
+    color: hsl(192, 100%, 9%);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+#pink{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    margin: 40px 0px 40px 0px;
+} 
+.button-pink-bigger{
+    background-color: hsl(322, 100%, 66%);
+    padding: 20px 80px 20px 80px;
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    box-shadow: 0px 5px 10px #D3D3D3;
+    margin-top: 50px;
+    color: white;
+    text-decoration: none;
+}
+header{
+    padding: 50px;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url("huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg");
+    margin-bottom: 140px;
+}
+footer{
+    color: white;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: hsl(192, 100%, 9%);
+    padding: 150px 60px 40px 60px;
+}
+.baner{
+    min-width: 300px;
+    max-width: 680px;
+}
+.top-section{
+    max-width: 500px;
+}
+.logo{
+    width: 200px;
+}
+.logo-white{
+    width: 240px;
+    margin: 0px 0px 40px 20px;
+}
+.image{
+    max-width: 420px;
+}
+.icon{
+    width: 32px;
+    margin: 0px 4px 0px 4px;
+}
+.box{
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px #D3D3D3;
+    max-width: 800px;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+    bottom: -70px;
+    margin-top: 60px;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-container > * { 
+    flex: 1;
+  }
+.fc-wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px #DCDCDC;
+    border-radius: 15px;
+    max-width: 1230px;
+    min-height: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 50px 40px 50px 120px;
+}
+.fc-wrap > * { 
+    flex: -1;
+  }
+.fc-wrap-reverse{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 20px #DCDCDC;
+    border-radius: 15px;
+    max-width: 1230px;
+    min-height: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 50px 40px 50px 120px;
+}
+.fc-wrap-reverse > * { 
+    flex: -1;
+  }
+/*grid*/
+.address{
+    display: grid;
+    max-width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 8fr 4fr 4fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "one four seven ten thirteen"
+    "one four eight eleven ."
+    "two five nine twelve ."
+    "three six . . .";
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+    max-width: 330px;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.ten{
+    grid-area: ten;
+}
+.eleven{
+    grid-area: eleven;
+}
+.twelve{
+    grid-area: twelve;
+}
+.thirteen{
+    grid-area: thirteen;
+}
+#info{
+    text-align: end;
+    font-size: 0.7em;
+    margin-top: 30px;
+}
+#bottom{
+    text-align: center;
+    margin-top: 30px;
+}
+}
+
+@media screen and (max-width: 815px){
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+h1{
+    font-size: 2.1em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h3{
+    margin: 20px 0px 20px 0px;
+}
+p{
+    font-size: 0.9em;
+}
+article{
+    max-width: 360px;
+    font-size: 0.9em;
+    color: hsl(208, 11%, 55%);
+}
+/*przyciski*/
+button{
+    background-color: white;
+    padding: 7px 30px 7px 30px;
+    border-radius: 25px;
+    font-family: Open Sans;
+    font-size: 0.8em;
+    font-weight: 700;
+    box-shadow: 0px 0px 10px #D3D3D3;
+    color: hsl(192, 100%, 9%);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+#pink{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    margin: 40px 0px 40px 0px;
+} 
+.button-pink-bigger{
+    background-color: hsl(322, 100%, 66%);
+    padding: 20px 80px 20px 80px;
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    box-shadow: 0px 5px 10px #D3D3D3;
+    margin-top: 50px;
+    color: white;
+    text-decoration: none;
+}
+header{
+    padding: 30px;
+    background-color: hsl(193, 100%, 96%);
+    background-image: url("huddle-landing-page-with-alternating-feature-blocks-master/images/bg-hero-desktop.svg");
+    margin-bottom: 140px;
+    text-align: center;
+}
+footer{
+    color: white;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: hsl(192, 100%, 9%);
+    padding: 150px 60px 40px 60px;
+}
+.baner{
+    min-width: 300px;
+    max-width: 680px;
+}
+.top-section{
+    max-width: 500px;
+}
+.logo{
+    width: 130px;
+}
+.logo-white{
+    width: 240px;
+    margin: 0px 0px 40px 0px;
+}
+.image{
+    max-width: 310px;
+    margin: 30px 0px 30px 0px;
+}
+.icon{
+    width: 32px;
+    margin: 0px 4px 0px 4px;
+}
+.box{
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 10px #D3D3D3;
+    max-width: 375px;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+    bottom: -70px;
+    margin-top: 60px;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-container > * { 
+    flex: 1;
+  }
+.fc-wrap{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px #DCDCDC;
+    border-radius: 15px;
+    max-width: 375px;
+    min-height: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 40px 40px 40px 40px;
+    text-align: center;
+}
+.fc-wrap > * { 
+    flex: -1;
+  }
+.fc-wrap-reverse{
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 20px #DCDCDC;
+    border-radius: 15px;
+    max-width: 375px;
+    min-height: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 40px 40px 40px 40px;
+    text-align: center;
+}
+.fc-wrap-reverse > * { 
+    flex: -1;
+  }
+/*grid*/
+.address{
+    display: grid;
+    grid-gap: 20px 0;
+    max-width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: repeat(12, 1 fr);
+    grid-template-areas:
+    "one four"
+    "one four"
+    "two five"
+    "three six"
+    ". ."
+    "seven seven"
+    "eight eight"
+    "nine nine"
+    "ten ten"
+    "eleven eleven" 
+    "twelve twelve"
+    "thirteen thirteen";
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+    max-width: 330px;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.ten{
+    grid-area: ten;
+}
+.eleven{
+    grid-area: eleven;
+}
+.twelve{
+    grid-area: twelve;
+}
+.thirteen{
+    grid-area: thirteen;
+    text-align: center;
+}
+#info{
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: 30px;
+}
+#bottom{
+    text-align: center;
+    margin-top: 30px;
+}
+}
